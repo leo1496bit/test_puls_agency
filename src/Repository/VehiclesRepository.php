@@ -44,6 +44,22 @@ class VehiclesRepository extends ServiceEntityRepository
             $this->_em->flush();
         }
     }
+    public function findListBrand(){
+        $dql='SELECT distinct v.brand FROM App\Entity\Vehicles v';
+        $query = $this->getEntityManager()->createQuery($dql);
+        return $query->execute();
+    }
+    public function findByPrice($a){
+        if($a==1) {
+            $dql = 'SELECT v FROM App\Entity\Vehicles v where v.priceMonthly is not null';
+        }
+        else{
+            $dql = 'SELECT v FROM App\Entity\Vehicles v';
+        }
+        $query = $this->getEntityManager()->createQuery($dql);
+        return $query->execute();
+    }
+
 
     // /**
     //  * @return Vehicles[] Returns an array of Vehicles objects

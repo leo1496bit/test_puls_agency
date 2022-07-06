@@ -1,0 +1,237 @@
+
+    <div class="mt-24 mx-24 h-screen flex flex-row">
+        <aside class="sidebar basis-1/3   lg:basis-1/5">
+            <h2 class="text-center text-[#042A38] uppercase text-lg font-bold">FILTRER MA RECHERCHE</h2>
+            <div class="bg-[#18495C] flex flex-row justify-between m-3 h-12 items-stretch p-2 rounded">
+                <div class="ml-3 font-medium text-white dark:text-gray-300 self-center ">Prêt à partir</div>
+                <label for="checked-toggleA" class="relative items-center cursor-pointer self-center">
+                    <input type="checkbox" value="" id="checked-toggleA" class="sr-only peer" checked>
+                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-cyan-600 dark:peer-focus:ring-cyan-600 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-cyan-600"></div>
+                </label>
+            </div>
+            <div class="bg-[#18495C] flex flex-row justify-between m-3 h-12 items-stretch p-2 rounded">
+                <div class="ml-3 font-medium text-white dark:text-gray-300 self-center">Zéro km</div>
+                <label for="checked-toggleB" class="relative items-center cursor-pointer self-center">
+                    <input type="checkbox" value="" id="checked-toggleB" class="sr-only peer" checked>
+                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-cyan-600 dark:peer-focus:ring-cyan-600 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-cyan-600"></div>
+                </label>
+            </div>
+            <div class="bg-[#18495C] flex flex-row justify-between m-3 h-12 items-stretch p-2 rounded">
+                <div class="ml-3  font-medium text-white dark:text-gray-300 inline-block self-center">Promotions</div>
+                <label for="checked-toggleC" class="relative items-center cursor-pointer self-center">
+                    <input type="checkbox" value="" id="checked-toggleC" class="sr-only peer" checked>
+                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-cyan-600 dark:peer-focus:ring-cyan-600 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-cyan-600"></div>
+                </label>
+            </div>
+            <h2 class="text-center">Budget</h2>
+            <div class="inline-flex rounded-md shadow-sm m-8" role="group">
+                <button type="button" id="totalPrice"
+                        class="py-2 px-4 text-sm font-medium text-gray-900 bg-transparent rounded-l-lg border border-gray-900 hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+                    Total
+                </button>
+                <button type="button" id="monthprice"
+                        class="py-2 px-4 text-sm font-medium text-gray-900 bg-transparent rounded-r-md border border-gray-900 hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+                    Mensuel
+                </button>
+            </div>
+            <div class="w-3/5 mx-auto">
+                <input id="default-range" type="range" value="50"
+                       class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700">
+            </div>
+            <div class="w-3/5 mx-auto flex flex-row justify-between">
+                <div>100€</div>
+                <div>4100€</div>
+            </div>
+            <div id="accordion-collapse" data-accordion="collapse" class="p-3">
+                <h2 id="accordion-collapse-heading-1">
+                    <button type="button"
+                            class="flex justify-between items-center p-5 w-full font-medium text-left text-[#18495C] rounded-t-xl border border-b-0 border-[#18495C] focus:ring-4 focus:ring-[#18495C] dark:focus:ring-[#18495C] dark:border-gray-700 dark:text-gray-400 hover:bg-[#18495C] dark:hover:bg-[#18495C]"
+                            class="flex justify-between items-center p-5 w-full font-medium text-left text-[#18495C] rounded-t-xl border border-b-0 border-[#18495C] focus:ring-4 focus:ring-[#18495C] dark:focus:ring-[#18495C] dark:border-gray-700 dark:text-gray-400 hover:bg-[#18495C] dark:hover:bg-[#18495C]"
+                            data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                            aria-controls="accordion-collapse-body-1">
+                        <span>Marque</span>
+                        <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor"
+                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                  clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                        {% for key, brand in brands %}
+                        <div class="flex items-center">
+                            <input id="default-radio-{{ key }}" type="radio" value="{{ brand.brand }}" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="default-radio-{{ key }}" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">{{ brand.brand }}</label>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <h2 id="accordion-collapse-heading-2">
+                    <button type="button"
+                            class="flex justify-between items-center p-5 w-full font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                            data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
+                            aria-controls="accordion-collapse-body-2">
+                        <span>Type de véhicule</span>
+                        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                  clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                        <div class="flex items-center">
+                            <input id="default-radioB-1" type="radio" value="" name="default-radioB" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="default-radioB-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Tous</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input checked id="default-radioB-2" type="radio" value="" name="default-radioB" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="default-radioB-2" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Citadine</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input checked id="default-radioB-3" type="radio" value="" name="default-radioB" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="default-radioB-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Berline</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input checked id="default-radioB-4" type="radio" value="" name="default-radioB" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="default-radioB-4" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Break</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input checked id="default-radioB-5" type="radio" value="" name="default-radioB" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="default-radioB-5" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">SUV / 4x4</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input checked id="default-radioB-6" type="radio" value="" name="default-radioB" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="default-radioB-6" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Monospace / Ludospace</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input checked id="default-radioB-7" type="radio" value="" name="default-radioB" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="default-radioB-7" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Coupé / Cabriolet</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <div class="main basis-2/3  lg:basis-4/5 ">
+            <div class="flex flex-row justify-between">
+                <div class="text-[#042A38]"><span class="font-bold">{{ vehicules|length }} résultats</span> correspondant à votre recherche</div>
+                <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Trier par <select id="countries" class="bg-gray-50 ml-5 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-40 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option value="brand">Brand</option>
+                        <option value="price">Price</option>
+                        <option value="model">Model</option>
+                        <option value="energy">Energy</option>
+                    </select></label>
+
+            </div>
+            <div class="grid grid-cols-3 gap-4">
+                {% for vehicule in vehicules %}
+                    <div>
+                        {% if vehicule.brand=="Nissan" %}
+                            <div class="bg-cover bg-center bg-no-repeat h-36 lg:h-64"
+                                 style="background-image: url('{{ vehicule.pics|filter(v=>v is defined)|first|default('https://glide.netfpn.net/publicar/medias/import_1738/20220616/8e41/156031_1.jpg?fit=crop-center&q=75&w=600&h=400') }}')"></div>
+                        {% elseif vehicule.brand=="Suzuki" %}
+                            <div class="bg-cover bg-center bg-no-repeat h-36 lg:h-64"
+                                 style="background-image: url('{{ vehicule.pics|filter(v=>v is defined)|first|default('https://centralmotor.com.co/suzuki/wp-content/uploads/2020/06/vitara_14.png') }}')"></div>
+                        {% else %}
+                            <div class="bg-cover bg-center bg-no-repeat h-36 lg:h-64"
+                                 style="background-image: url('{{ vehicule.pics|filter(v=>v is defined)|first|default('https://s3.caroom.fr/cache/miniatures_500x245/modeles/suzuki-vitara-1648952519.png') }}')"></div>
+                        {% endif %}
+                        <div class="flex flex-row justify-between p-5">
+                            <div>
+                                <h3 class="text-[#70b4c3] uppercase text-base font-semibold mb-2">{{ vehicule.brand }}</h3>
+                                <h2 class="text-[#042A38] uppercase text-2xl font-bold mb-2">{{ vehicule.model }}</h2>
+                                <p class="uppercase text-[10px] font-bold mb-2">{{ vehicule.version }}</p>
+                                <p class="text-[9px] mb-2">{{ vehicule.year }} - {{ vehicule.energy }} - {{ vehicule.power }} ch</p>
+                            </div>
+                            <div>
+                                <h3 class="text-right uppercase text-2xl font-bold">{{ vehicule.price }} €</h3>
+                                {% if vehicule.priceRetail is defined and vehicule.priceRetail>0 %}
+                                    <h2
+                                        class="text-right mb-2"><span class="uppercase text-xs font-bold">{{ vehicule.priceRetail - vehicule.price }} €</span>
+                                    <span class="bg-[#f4ab22] text-[#042A38] font-bold">-{{ 100-(100*vehicule.price/vehicule.priceRetail)|round }}%</span>
+                                    </h2>{% endif %}
+                             {% if vehicule.priceMonthly != false  %}   <p class="text-right text-[#70b4c3] text-[9px]">Ou à partir de</p>
+                                <p class="text-right text-[#70b4c3]">{{ vehicule.priceMonthly }} €</p>
+                                <p class="text-right text-[#70b4c3]">/mois</p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <script>
+        let options={
+
+            // Balise parente
+            parentTag: document.body,
+
+            // Attributs à appliquer à la balise "script" (exemples)
+            attributes: {
+            },
+
+            // Fonction à exécuter lorsque le script est téléchargé
+            callback: function() {
+                console.log("chargement reuissi")
+            },
+        };
+        let filtrer = function (){
+            let filter= document.getElementById("countries")
+            filter.onchange=function (e){
+                fetch("/"+this.value).then(response=>{
+                    response.json().then(data=>{
+                        document.querySelector('body').innerHTML=data.data.content
+                        filtrer()
+                        filtrerBrand()
+                        filterTotalOrMonth()
+                        loadScript("https://unpkg.com/flowbite@1.4.7/dist/flowbite.js",options)
+                    })
+                })
+            }
+        }
+        filtrer()
+       let filtrerBrand = function() {
+           let brands = document.querySelectorAll('input[name="default-radio"]')
+           brands.forEach(elt => {
+               elt.onclick = function (e) {
+                   fetch("/brands/" + this.value).then(response => {
+                       response.json().then(data => {
+                           document.querySelector('body').innerHTML = data.data.content
+                           filtrer()
+                           filtrerBrand()
+                           filterTotalOrMonth()
+                       })
+                   })
+               }
+           })
+       }
+       filtrerBrand()
+        let filterTotalOrMonth=function() {
+            document.getElementById("totalPrice").onclick = function (e) {
+                fetch("/price/2").then(response=>{
+                    response.json().then(data => {
+                        document.querySelector('body').innerHTML = data.data.content
+                        filtrer()
+                        filtrerBrand()
+                        filterTotalOrMonth()
+                    })
+                })
+            }
+            document.getElementById("monthprice").onclick = function (e) {
+                fetch("/price/1").then(response=>{
+                    response.json().then(data => {
+                        document.querySelector('body').innerHTML = data.data.content
+                        filtrer()
+                        filtrerBrand()
+                        filterTotalOrMonth()
+                    })
+                })
+            }
+        }
+        filterTotalOrMonth()
+    </script>
